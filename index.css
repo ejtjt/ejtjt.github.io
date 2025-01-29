@@ -3,37 +3,47 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
-    background-color: #333;
+header, footer {
+    background: linear-gradient(90deg, #FF5733, #FFBD33);
     color: white;
     padding: 10px 0;
 }
 
-nav ul {
+header nav ul, footer .footer-content {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+header nav ul li a:hover {
+    color: #C70039;
 }
 
 main {
     padding: 20px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
 }
