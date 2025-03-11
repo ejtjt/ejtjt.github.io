@@ -28,8 +28,9 @@ h1 {
 
 iframe {
   width: 100%; 
-  flex: 1; /* Prend tout l'espace restant après le h1 */
+  height: 60vh; /* Définit la hauteur de l'iframe à 60% de la fenêtre */
   border: none;
+  flex-grow: 0;
 }
 
 
