@@ -15,11 +15,6 @@
  */
 'use strict';
 
-#sceneListToggle {
-  display: none;
-}
-
-
 (function() {
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
