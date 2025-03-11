@@ -33,6 +33,11 @@ a, a:hover, a:active, a:visited {
   color: inherit;
 }
 
+#sceneListToggle {
+  display: none;
+}
+
+
 #pano {
   position: absolute;
   top: 0;
