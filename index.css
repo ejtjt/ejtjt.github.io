@@ -28,8 +28,9 @@ h1 {
 
 iframe {
   width: 100%; 
-  height: 60vh; /* Définit la hauteur de l'iframe à 60% de la fenêtre */
+  height: 600px; /* Définit la hauteur de l'iframe à 60% de la fenêtre */
   border: none;
+  display: block;
   flex-grow: 0;
 }
 
