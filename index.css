@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     background-color: #f9f9f9;
     color: #333;
@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 body, html {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -27,8 +28,9 @@ h1 {
 
 iframe {
   width: 100%; 
-  flex: 1; /* Prend tout l'espace restant après le h1 */
+  height: 60vh; /* Définit la hauteur de l'iframe à 60% de la fenêtre */
   border: none;
+  flex-grow: 0;
 }
 
 header, footer {
@@ -63,6 +65,12 @@ header nav ul li a:hover {
 
 main {
     position: relative;
-    height: 100vh;  /* 100% de la hauteur de la fenêtre */
     width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: auto; /* Colle le footer au bas de la page */
 }
